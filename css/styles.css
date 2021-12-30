@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap")
+    format("truetype");
+}
+
+body {
+  font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+header {
+  background-color: #c0880f;
+  height: 65px;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+.homepage-img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.nav-bar {
+  align-items: center;
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav li {
+  display: block;
+  padding: 10px;
+}
+
+.logo {
+  padding: 10px;
+  color: black;
+  font-size: larger;
+  font-weight: 800;
+}
+
+.cta-home {
+  color: white;
+  font-weight: 700;
+}
+
+.cta-home:hover {
+  box-shadow: inset 120px 0 0 0 black;
+  cursor: pointer;
+}
+
+.face-text {
+  color: white;
+  font-size: xxx-large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+
+footer {
+  color: white;
+  background-color: black;
+}
+
+.homepage-img2 {
+  width: 100%;
+}
+
+.homepage-main {
+  position: relative;
+}
+
+.face-text2 {
+  color: white;
+  font-size: xx-large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+
+.vist-text {
+  text-shadow: 2px 2px 4px black;
+}
+
+.cta-homepage2 {
+  color: white;
+  background-color: #c0880f;
+  font-size: large;
+  padding: 3px;
+}
+
+.cta-homepage2:hover {
+  box-shadow: inset 170px 0 0 0 black;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-icons {
+  padding-right: 20px;
+  font-size: larger;
+}
+
+.icons {
+  padding: 15x;
+  font-size: largr;
+}
