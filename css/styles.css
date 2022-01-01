@@ -8,29 +8,37 @@ body {
   font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0%;
   padding: 0%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 10%;
 }
 
 header {
   background-color: #c0880f;
   height: 65px;
   z-index: 1;
-  position: fixed;
   width: 100%;
 }
 
 .homepage-img {
   width: 100%;
-  height: 700px;
-  object-fit: cover;
 }
 
 .nav-bar {
   align-items: center;
-  display: flex;
+  display: table;
 }
 
 nav ul {
   display: flex;
+}
+
+nav {
+  display: block;
 }
 
 a {
@@ -61,12 +69,11 @@ nav li {
 
 .face-text {
   color: white;
-  font-size: xxx-large;
+  font-size: large;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
 }
 
 footer {
@@ -84,12 +91,11 @@ footer {
 
 .face-text2 {
   color: white;
-  font-size: xx-large;
+  font-size: large;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
 }
 
 .vist-text {
@@ -122,4 +128,159 @@ footer {
 .icons {
   padding: 15x;
   font-size: largr;
+}
+
+/*Our Locations*/
+
+.our-location-img {
+  width: 100%;
+}
+
+.our-location-main {
+  display: grid;
+  grid-gap: 10px;
+  padding-top: 70px;
+  background-color: lightgray;
+}
+
+.cta-our-locations {
+  background-color: #c0880f;
+  color: white;
+  padding: 3px;
+  display: inline-block;
+}
+
+.cta-our-locations:hover {
+  box-shadow: inset 170px 0 0 0 black;
+  cursor: pointer;
+}
+
+/*About Us*/
+
+.about-us {
+  padding-top: 50px;
+  background: lightgrey;
+}
+
+.about-us-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.about-us-face {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.about-us-text {
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.h1-about-us {
+  text-align: center;
+  color: #c0880f;
+}
+
+/*Contact Us*/
+
+.contact-us-main {
+  padding-top: 40px;
+  background-color: lightgrey;
+}
+
+.inputs {
+  display: grid;
+  grid-gap: 10px;
+  margin: auto;
+  max-width: 500px;
+}
+
+.Message {
+  height: 70px;
+}
+
+.h1-contact-us {
+  color: #c0880f;
+  text-align: center;
+}
+
+.Send {
+  color: white;
+  background-color: #c0880f;
+  padding-top: 3px;
+  text-align: center;
+}
+
+.Send:hover {
+  box-shadow: inset 500px 0 0 0 black;
+  cursor: pointer;
+}
+
+/*Locations info*/
+
+.locations-main {
+  padding-top: 40px;
+  background-color: lightgrey;
+}
+
+.location-main-img {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  header {
+    background-color: #c0880f;
+    height: 65px;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+  }
+
+  .nav-bar {
+    align-items: center;
+    display: flex;
+  }
+
+  .homepage-img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+  }
+  .face-text {
+    color: white;
+    font-size: xxx-large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+  }
+
+  .face-text2 {
+    color: white;
+    font-size: xx-large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+  }
+
+  .our-location-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding-top: 70px;
+    background-color: lightgray;
+  }
+
+  .about-us-face {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
 }
