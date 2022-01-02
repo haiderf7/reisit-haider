@@ -71,7 +71,7 @@ nav li {
   color: white;
   font-size: large;
   position: absolute;
-  top: 50%;
+  top: 34%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -91,9 +91,8 @@ footer {
 
 .face-text2 {
   color: white;
-  font-size: large;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -105,8 +104,6 @@ footer {
 .cta-homepage2 {
   color: white;
   background-color: #c0880f;
-  font-size: large;
-  padding: 3px;
 }
 
 .cta-homepage2:hover {
@@ -252,7 +249,7 @@ footer {
   }
   .face-text {
     color: white;
-    font-size: xxx-large;
+    font-size: 2em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -262,7 +259,7 @@ footer {
 
   .face-text2 {
     color: white;
-    font-size: xx-large;
+    font-size: 2em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -282,5 +279,12 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+  }
+
+  .cta-homepage2 {
+    color: white;
+    background-color: #c0880f;
+    font-size: large;
+    padding: 3px;
   }
 }
