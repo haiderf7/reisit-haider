@@ -47,24 +47,49 @@
         </ul>
       </nav>
     </header>
-    <main class="contact-us-main">
-      <h1 class="h1-contact-us">Contact us</h1>
-      <div class="inputs">
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Message.." class="Message" />
-        <a href="index.html" class="Send">Send</a>
-      </div>
+    <h1 class="h1-contact-us">Contact us</h1>
+    <main class="form-container">
+      <form id="contactForm">
+        <div>
+          <label>
+            Name (required)
+            <input name="Name" id="Name" />
+          </label>
+          <div class="error" id="NameError">Please enter your first name</div>
+        </div>
+
+        <div>
+          <label>
+            Email
+            <input name="email" id="email" />
+          </label>
+          <div class="error" id="emailError">
+            Please enter a valid email address
+          </div>
+        </div>
+
+        <div>
+          <label>
+            Message (minimum 20 characters)
+            <input name="message" id="message" class="message" />
+          </label>
+          <div class="error" id="messageError">
+            Your Subject must be at least 20 characters
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
     </main>
+    <script src="js/contact.js"></script>
     <footer>
       <div>
         <p>Conscious Coffee 2021</p>
       </div>
       <div class="footer-icons">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-youtube"></i>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.twitter.com/"><i class="fab fa-youtube"></i></a>
       </div>
     </footer>
   </body>
