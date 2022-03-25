@@ -18,7 +18,7 @@ main {
 }
 
 header {
-  background-color: #c0880f;
+  background-color: black;
   height: 65px;
   z-index: 1;
   width: 100%;
@@ -35,6 +35,7 @@ header {
 
 nav ul {
   display: flex;
+  padding: 0px;
 }
 
 nav {
@@ -52,9 +53,12 @@ nav li {
 
 .logo {
   padding: 10px;
-  color: black;
-  font-size: larger;
+  font-size: x-large;
   font-weight: 800;
+  display: table-caption;
+  font-style: italic;
+  font-family: math;
+  color: #ffa75f;
 }
 
 .cta-home {
@@ -63,7 +67,7 @@ nav li {
 }
 
 .cta-home:hover {
-  box-shadow: inset 120px 0 0 0 black;
+  box-shadow: inset 120px 0 0 0 #883e00;
   cursor: pointer;
 }
 
@@ -74,6 +78,7 @@ nav li {
   top: 34%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background: rgb(0 0 0 / 40%);
 }
 
 footer {
@@ -99,6 +104,7 @@ footer {
 
 .vist-text {
   text-shadow: 2px 2px 4px black;
+  background: rgb(0 0 0 / 30%);
 }
 
 .cta-homepage2 {
@@ -107,7 +113,7 @@ footer {
 }
 
 .cta-homepage2:hover {
-  box-shadow: inset 170px 0 0 0 black;
+  box-shadow: inset 180px 0 0 0 black;
   cursor: pointer;
 }
 
@@ -141,7 +147,7 @@ footer {
 }
 
 .cta-our-locations {
-  background-color: #c0880f;
+  background-color: #5b2900;
   color: white;
   padding: 3px;
   display: inline-block;
@@ -179,7 +185,8 @@ footer {
 
 .h1-about-us {
   text-align: center;
-  color: #c0880f;
+  color: #5b2900;
+  font-style: italic;
 }
 
 /*Contact Us*/
@@ -203,7 +210,8 @@ input {
 }
 
 button {
-  background: #f59f05;
+  margin-left: 6px;
+  background: #5b2900;
   border: none;
   width: 100%;
   padding: 20px;
@@ -212,7 +220,6 @@ button {
   cursor: pointer;
   border-radius: 0.2rem;
   font-size: larger;
-  margin: 8px;
 }
 
 button:hover {
@@ -244,9 +251,19 @@ label {
 
 .location-main-img {
   width: 100%;
+  object-fit: cover;
+}
+
+.info-text {
+  margin: 10px;
+  width: 350px;
 }
 
 /* Book now info*/
+
+.main-booknow {
+  background-color: lightgrey;
+}
 
 .book-now-details {
   padding-top: 55px;
@@ -263,252 +280,104 @@ label {
   margin: 0 auto;
   text-align: center;
   padding: 7px;
-  background-color: orange;
-  width: 236px;
+  background-color: #5b2900;
+  width: 238px;
   margin-top: 5px;
+}
+
+.basket:hover {
+  box-shadow: inset 700px 0 0 0 black;
+}
+
+.basket-cta {
+  color: white;
 }
 
 /* checkout*/
 
-* {
-  box-sizing: border-box;
+.main-checkout {
+  background-color: black;
 }
 
-.checkout-panel {
+.checkout-form {
+  box-shadow: 2px 2px 10px #454545;
+  background-color: #ffffff;
+  text-align: center;
+  width: 445px;
+  padding: 1rem;
+  margin: 5rem auto;
+}
+
+.card h2 {
+  color: #5b2900;
+}
+
+.checkout-form .card form {
   display: flex;
   flex-direction: column;
-  width: 940px;
-  height: 766px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
-.panel-body {
-  padding: 45px 80px 0;
+
+.checkout-form .card .input-details {
+  display: flex;
+}
+
+.checkout-form .card .input-details input {
+  width: 20%;
   flex: 1;
+  margin: 0.4rem 0.3rem;
 }
 
-.title {
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 40px;
-  color: #2e2e2e;
-}
-.progress-bar {
-  display: flex;
-  margin-bottom: 50px;
-  justify-content: space-between;
-}
-
-.step {
-  box-sizing: border-box;
-  position: relative;
-  z-index: 1;
-  display: block;
-  width: 25px;
-  height: 25px;
-  margin-bottom: 30px;
-  border: 4px solid #fff;
-  border-radius: 50%;
-  background-color: #efefef;
-}
-
-.step:after {
-  position: absolute;
-  z-index: -1;
-  top: 5px;
-  left: 22px;
-  width: 225px;
-  height: 6px;
-  content: "";
-  background-color: #efefef;
-}
-
-.step:before {
-  color: #2e2e2e;
-  position: absolute;
-  top: 40px;
-}
-
-.step:last-child:after {
-  content: none;
-}
-
-.step.active {
-  background-color: #1abc9c;
-}
-.step.active:after {
-  background-color: #1abc9c;
-}
-.step.active:before {
-  color: #1abc9c;
-}
-.step.active + .step {
-  background-color: #1abc9c;
-}
-.step.active + .step:before {
-  color: #1abc9c;
-}
-
-.step:nth-child(1):before {
-  content: "Cart";
-}
-.step:nth-child(2):before {
-  right: -40px;
-  content: "Confirmation";
-}
-.step:nth-child(3):before {
-  right: -30px;
-  content: "Payment";
-}
-.step:nth-child(4):before {
-  right: 0;
-  content: "Finish";
-}
-.payment-method {
-  display: flex;
-  margin-bottom: 60px;
-  justify-content: space-between;
-}
-
-.method {
-  display: flex;
-  flex-direction: column;
-  width: 382px;
-  height: 122px;
-  padding-top: 20px;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  background-color: rgb(249, 249, 249);
-  justify-content: center;
-  align-items: center;
-}
-
-.card-logos {
-  display: flex;
-  width: 150px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.radio-input {
-  margin-top: 20px;
-}
-
-input[type="radio"] {
-  display: inline-block;
-}
-.input-fields {
-  display: flex;
-  justify-content: space-between;
-}
-
-.input-fields label {
-  display: block;
-  margin-bottom: 10px;
-  color: #b4b4b4;
-}
-
-.info {
-  font-size: 12px;
-  font-weight: 300;
-  display: block;
-  margin-top: 50px;
-  opacity: 0.5;
-  color: #2e2e2e;
-}
-
-div[class*="column"] {
-  width: 382px;
-}
-
-input[type="text"],
-input[type="password"] {
-  font-size: 16px;
-  width: 100%;
-  height: 50px;
-  padding-right: 40px;
-  padding-left: 16px;
-  color: rgba(46, 46, 46, 0.8);
-  border: 1px solid rgb(225, 225, 225);
-  border-radius: 4px;
-  outline: none;
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus {
-  border-color: rgb(119, 219, 119);
-}
-
-#date {
-  background: url(img/icons_calendar_black.png) no-repeat 95%;
-}
-#cardholder {
-  background: url(img/icons_person_black.png) no-repeat 95%;
-}
-#cardnumber {
-  background: url(img/icons_card_black.png) no-repeat 95%;
-}
-#verification {
-  background: url(img/icons_lock_black.png) no-repeat 95%;
-}
-
-.small-inputs {
-  display: flex;
-  margin-top: 20px;
-  justify-content: space-between;
-}
-
-.small-inputs div {
-  width: 182px;
-}
-.panel-footer {
-  display: flex;
-  width: 100%;
-  height: 96px;
-  padding: 0 80px;
-  background-color: rgb(239, 239, 239);
-  justify-content: space-between;
-  align-items: center;
-}
-.btn {
-  font-size: 16px;
-  width: 163px;
-  height: 48px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  letter-spacing: 1px;
+input {
   border: none;
-  border-radius: 23px;
-}
-
-.back-btn {
-  color: #1abc9c;
-  background: #fff;
-}
-
-.next-btn {
-  color: #fff;
-  background: #1abc9c;
-}
-
-.btn:focus {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 15px 0;
+  padding: 4px;
+  font-size: 1rem;
   outline: none;
 }
 
-.btn:hover {
-  transform: scale(1.1);
+.submit-button {
+  border: 0;
+  padding: 20px;
+  background-color: #5b2900;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 20px;
+  box-shadow: 1px 1px 1px black;
 }
-.blue-border {
-  border: 1px solid rgb(110, 178, 251);
+
+.submit-button:hover {
+  background-color: #5b2900;
+  box-shadow: none;
 }
-.warning {
-  border-color: #1abc9c;
+
+/*check out sucsess*/
+
+.checkout-sucsess-main {
+  margin-top: 50px;
+  background-color: lightgrey;
+}
+
+.checkout-sucsess-img {
+  height: 450px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.checkoutsucess-h1 {
+  text-align: center;
+  color: #5b2900;
+}
+
+.checkoutsucsess-info {
+  text-align: center;
+  color: #5b2900;
+  font-size: larger;
 }
 
 @media (min-width: 600px) {
   header {
-    background-color: #c0880f;
+    background-color: black;
     height: 65px;
     z-index: 1;
     position: fixed;
@@ -553,6 +422,13 @@ input[type="password"]:focus {
     background-color: lightgray;
   }
 
+  .location-main-img {
+    width: 100%;
+    object-fit: cover;
+    height: 550px;
+    margin-top: 25px;
+  }
+
   .about-us-face {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -563,6 +439,10 @@ input[type="password"]:focus {
     color: white;
     background-color: #c0880f;
     font-size: large;
-    padding: 3px;
+    padding: 8px;
   }
+}
+
+nav ul {
+  display: flex;
 }
