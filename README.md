@@ -70,4 +70,4 @@ SOFTWARE.
 
 ## Acknowledgments
 
-I would like to acknowledge all the teachers at my school and my fellow students Noroff in our class group at Discord who have always helped me when I asked for help.
+I would like to acknowledge all the teachers at my school and my fellow students Noroff in our class group who have always helped me when I asked for help.
