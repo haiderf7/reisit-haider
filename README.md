@@ -12,4 +12,4 @@ This project is about a site which is called Conscious Coffee  the point of it w
 
 How I made the site:
 
-How I made the site:
+
