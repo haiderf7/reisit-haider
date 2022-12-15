@@ -16,7 +16,7 @@ How I made the site:
 - Adobe XD prototype.
 - Create the website with HTML and CSS
 - Later on using JS to get more content to the site.
-- Create a WordPress installation and use its plugin WooCommerce to get the products.
+- Create a WordPress installation and use its plugin WooCommerce to get the locations.
 
 
 ## Built With
